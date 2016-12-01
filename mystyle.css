@@ -1,0 +1,295 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    background-color: beige;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.card {
+    background-color: white;
+    /*
+    height: 50%;
+    width: 80%;
+*/
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px 10px rgba(203, 203, 199, 0.38);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+}
+
+.card__search {
+    color: black;
+    display: flex;
+    height: 10%;
+    width: auto;
+    background: white;
+    color: black;
+    margin: 0 5%;
+    outline: none;
+    font-size: 1em;
+}
+
+
+/*#DIV_1*/
+
+.card__search #input {
+    display: block;
+    height: auto;
+    width: 80%;
+    min-width: 200px;
+    border: none;
+    flex: 1 1 0%;
+    outline: none;
+    padding: 0px;
+    font-size: 0.85em;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+
+
+
+.inputcolordrizzle::-webkit-input-placeholder {
+    color: #b6d7f1;
+}
+
+.inputcolorrain::-webkit-input-placeholder {
+    color: #53b3ff;
+}
+
+.inputcolorsnow::-webkit-input-placeholder {
+    color: #88888a;
+}
+
+.inputcolorsmokey::-webkit-input-placeholder {
+    color: #88888a;
+}
+
+.inputcolorclear::-webkit-input-placeholder {
+    color: #ab694d;
+}
+
+.inputcolorstorm::-webkit-input-placeholder {
+    color: #ab694d;
+}
+
+.inputcolorcloudy::-webkit-input-placeholder {
+    color: #9e9e9e;
+}
+
+.inputcolorextreme::-webkit-input-placeholder {
+    color: #9a3206;
+}
+
+.inputcolordrizzle::-webkit-input-placeholder {
+    color: #53b3ff
+}
+
+
+/*#INPUT_2*/
+
+.card__search #button {
+    cursor: pointer;
+    display: block;
+    height: auto;
+    width: auto;
+    background: none;
+    border: 0;
+    outline: none;
+    font-size: 1em;
+    padding: 0;
+}
+
+#button:hover{
+    font-size:1.1em;
+}
+
+/*#BUTTON_3*/
+
+.card__location {
+    height: 15%;
+    width: auto;
+}
+
+.card__location h1 {
+    font-size: 2em;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.card__location span {
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    color: #bfbfbf;
+}
+
+.card__icon {
+    height: 20%;
+    width: auto;
+    margin-bottom: 2%;
+}
+
+.card__icon i {
+    font-size: 3.5em;
+    vertical-align: middle;
+    padding: 1%;
+}
+
+.card__desc {
+    margin-top: 12px;
+}
+
+.card__desc h2 {
+    margin: 0;
+    font-size: 0.7em;
+    color: #bfbfbf;
+    font-weight: 500;
+}
+
+.card__temp {
+    margin-bottom: 2%;
+}
+
+.card__temp p {
+    font-size: 1.5em;
+    position: relative;
+    display: inline;
+    margin: 0 1%;
+}
+
+.card__temp p:nth-child(odd) {
+    font-size: 1em;
+}
+
+.card__moreinfo {
+    height: auto;
+    width: auto;
+    font-size: 0.7em;
+    padding: 3%;
+    display: block;
+    border-bottom: 1px solid #bfbfbf;
+    border-top: 1px solid #bfbfbf;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.card__weathergrid {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4.5%;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+td {
+    padding: 2% 0;
+}
+
+td:nth-child(even) {
+    font-size: 1.35em;
+    text-align: right;
+}
+
+
+/*media queries*/
+
+@media screen and (min-width:425px) and (max-width:712px) {
+    html {
+        font-size: 17px;
+    }
+    .card {
+        width: 70%;
+        height: 85%;
+    }
+}
+
+@media screen and (min-width:674px) and (max-width:917px) {
+    html {
+        font-size: 18px;
+    }
+    .card {
+        width: 65%;
+        height: 90%;
+    }
+    .card__weathergrid {
+        margin-top: 1%;
+    }
+}
+
+@media screen and (min-width:918px)and (max-width:1013px) {
+    html {
+        font-size: 20px;
+    }
+    .card {
+        width: 60%;
+        height: 90%;
+    }
+    .card__weathergrid {
+        margin-top: 1%;
+    }
+}
+
+@media screen and (min-width:1014px) {
+    html {
+        font-size: 20px;
+    }
+    .card {
+        width: 45%;
+        height: 95%;
+    }
+    .card__weathergrid {
+        margin-top: 0;
+    }
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+    position: fixed;
+}

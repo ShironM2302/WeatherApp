@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--   Planet graphic by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>-->
+    <meta charset="utf-8">
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>What's The Weather?</title>
+    <meta name="description" content="Weather app based on users location">
+    <meta name="author" content="Shiron Manuelpillai">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <!-- ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.css">
+    <!-- FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> </head>
+
+<body>
+    <div class="card">
+        <div class="card__search">
+            <input id="input" placeholder="Search by city" />
+            <button id="button"> <i id="searchicon" class="fa fa-search"></i> </button>
+        </div>
+        <div class="card__location">
+            <h1 id="city"></h1>
+            <div class="card__now"><span id="day"></span><span id="date"></span><span id="time"></span></div> </div>
+        <div class="card__icon"> <i id="icon"></i>
+            <div class="card__desc">
+                <h2 id="weatherDesc"></h2> </div>
+        </div>
+        <div class="card__temp">
+            <p id="lowtemp"></p>
+            <p id="maintemp"></p>
+            <p id="hightemp"></p>
+        </div>
+        <div class="card__moreinfo"> The next four days</div>
+        <div class="card__weathergrid">
+            <table>
+                <tr>
+                    <td>Tommorow</td>
+                    <td><i id="icontom"></i></td>
+                    <td id="tomtemp"></td>
+                </tr>
+                <tr>
+                    <td id="twodays"></td>
+                    <td><i id="icontwodays" </i></td>
+                    <td id="twodaytemp"></td>
+                </tr>
+                <tr>
+                    <td id="threedays"></td>
+                    <td><i id="iconthreedays"></i></td>
+                    <td id="threedaytemp"></td>
+                </tr>
+                <tr>
+                    <td id="fourdays"></td>
+                    <td><i id="iconfourdays"></i></td>
+                    <td id="fourdaytemp"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="overlay">
+        <div class="spinner"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
